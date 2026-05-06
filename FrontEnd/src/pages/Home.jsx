@@ -461,10 +461,10 @@ function Home() {
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true, amount: 0.1 }}
-                    className="flex flex-col items-center py-8 md:py-16 lg:py-24 text-center px-4 sm:px-8 md:px-10 max-w-[1400px] mx-auto w-full"
+                    className="flex flex-col items-center py-8 md:py-16 lg:py-24 text-center px-4 sm:px-8 md:px-10 max-w-350 mx-auto w-full"
                 >
-                    <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="font-semibold text-white text-2xl sm:text-3xl md:text-4xl lg:text-[56px]">WHY CHOOSE</div>
-                    <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="-mt-2 font-semibold text-white text-2xl sm:text-3xl md:text-4xl lg:text-[56px]">OUR SAFARI TOURS</div>
+                    <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="font-semibold text-white text-2xl sm:text-3xl md:text-4xl lg:text-[56px]">Discover Our Range of Services</div>
+    
                     <div style={{ fontFamily: 'Poppins, sans-serif', fontWeight: '400' }} className="text-lime-400 text-[12px] sm:text-[14px] md:text-[18px] lg:text-[22px] mt-2">Authentic, sustainable, And Unforgettable Encounters In Udawalawe</div>
                 </motion.div>
 
@@ -528,9 +528,7 @@ function Home() {
         <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '700' }} className="text-black text-3xl sm:text-4xl md:text-[56px] leading-tight">
             WHY <span className="text-lime-500">CHOOSE</span><br />OUR SAFARI TOURS
         </h2>
-        <p style={{ fontFamily: 'Poppins, sans-serif', fontWeight: '400' }} className="text-gray-500 text-sm md:text-xl mt-4 max-w-2xl">
-            Authentic, sustainable, and unforgettable encounters in Udawalawe.
-        </p>
+    
     </motion.div>
 
     <div className="flex flex-col lg:flex-row px-6 md:px-16 gap-12 items-center max-w-[1400px] mx-auto">

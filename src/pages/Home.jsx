@@ -1107,7 +1107,7 @@ function Home() {
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.3 }}
                             src={galleryImages[lightboxIndex]}
-                            className="w-full max-w-[1000px] h-[60vh] md:h-[75vh] object-cover rounded-lg shadow-2xl border-2 border-white/20"
+                            className="w-full max-w-250 h-[60vh] md:h-[75vh] object-cover rounded-lg shadow-2xl border-2 border-white/20"
                             onClick={(e) => e.stopPropagation()}
                         />
                     </div>
@@ -1117,7 +1117,7 @@ function Home() {
     {/* Decorative background element */}
     <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-lime-100 rounded-full blur-3xl opacity-50"></div>
     
-    <div className="max-w-[1400px] mx-auto px-6">
+    <div className="max-w-350 mx-auto px-6">
         <motion.div
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -1136,87 +1136,59 @@ function Home() {
 
 
         {/* Review Carousel */}
-        <div className="relative w-full max-w-6xl mx-auto">
-            <div className="flex items-center justify-between mb-8">
-                <div className="flex space-x-4 overflow-x-auto scrollbar-hide">
-                    {reviewsData.map((review, index) => (
-                        <motion.div
-                            key={index}
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            viewport={{ once: true }}
-                            className={`flex-shrink-0 w-80 bg-gray-50 rounded-3xl p-6 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 group relative cursor-pointer ${
-                                index === currentReviewIndex ? 'ring-2 ring-lime-400 shadow-lg' : ''
-                            }`}
-                            onClick={() => setCurrentReviewIndex(index)}
-                        >
-                            {/* Quotation Mark Decoration */}
-                            <div className="absolute top-4 right-6 text-lime-400/20 text-4xl font-serif">"</div>
+      {/* Review Carousel Section */}
+<div id="review" className="py-16 bg-white overflow-hidden">
+    <div className="max-w-[1400px] mx-auto px-4 mb-12 text-center">
+        <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '700' }} className="text-3xl md:text-5xl text-black uppercase">
+            Guest <span className="text-lime-500">Experiences</span>
+        </h2>
+        <p className="text-gray-500 mt-4 font-medium">Voices of those who journeyed with us through the wild</p>
+    </div>
 
-                            <div className="flex items-center gap-3 mb-4">
-                                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-lime-400 p-0.5">
-                                    <img src={review.image} alt={review.name} className="w-full h-full object-cover rounded-full" />
-                                </div>
-                                <div>
-                                    <h4 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="text-black text-base">{review.name}</h4>
-                                    <p className="text-gray-400 text-xs">{review.date}</p>
-                                </div>
-                            </div>
-
-                            <div className="flex mb-3">
+    {/* Infinite Auto-Scrolling Container */}
+    <div className="relative flex">
+        <motion.div 
+            className="flex gap-6"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{ 
+                ease: "linear", 
+                duration: 20, 
+                repeat: Infinity 
+            }}
+            style={{ width: "fit-content" }}
+        >
+            {/* We map the 6 reviews twice to create a seamless loop.
+               reviewsData contains: image23, image28, image29, image25, image26, image27
+            */}
+            {[...reviewsData, ...reviewsData].map((review, idx) => (
+                <div 
+                    key={idx} 
+                    className="w-[300px] md:w-[400px] flex-shrink-0 bg-gray-50 p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
+                >
+                    <div className="flex items-center gap-4 mb-6">
+                        <img 
+                            src={review.image} 
+                            alt={review.name} 
+                            className="w-16 h-16 rounded-full object-cover border-2 border-lime-400" 
+                        />
+                        <div>
+                            <h4 className="font-bold text-black" style={{ fontFamily: 'Montserrat, sans-serif' }}>{review.name}</h4>
+                            <p className="text-xs text-gray-400">{review.date}</p>
+                            <div className="flex gap-1 mt-1">
                                 {[...Array(review.rating)].map((_, i) => (
-                                    <svg key={i} className="w-4 h-4 text-lime-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
+                                    <span key={i} className="text-yellow-400 text-xs">★</span>
                                 ))}
                             </div>
-
-                            <p style={{ fontFamily: 'Poppins, sans-serif' }} className="text-gray-700 leading-relaxed italic text-sm line-clamp-3">
-                                "{review.review}"
-                            </p>
-
-                            <div className="mt-6 pt-4 border-t border-gray-200 flex justify-between items-center">
-                                <span className="text-xs font-bold text-lime-600 tracking-widest uppercase">Verified Stay</span>
-                                <div className="flex items-center gap-2">
-                                    {/* Auto-scrolling review platforms */}
-                                    <div className="relative overflow-hidden w-24 h-5">
-                                        <div className="flex animate-scroll-platforms absolute">
-                                            <img src={iconGoogle} className="w-4 h-4 opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0 mr-2" alt="Google Review" />
-                                            <img src={iconFacebook} className="w-4 h-4 opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0 mr-2" alt="Facebook Review" />
-                                            <img src={iconInstagram} className="w-4 h-4 opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0 mr-2" alt="Instagram Review" />
-                                            <img src={icon11} className="w-4 h-4 opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0 mr-2" alt="TripAdvisor" />
-                                            <img src={icon12} className="w-4 h-4 opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0 mr-2" alt="Booking.com" />
-                                            <img src={icon13} className="w-4 h-4 opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0 mr-2" alt="Trustpilot" />
-                                            {/* Duplicate for seamless loop */}
-                                            <img src={iconGoogle} className="w-4 h-4 opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0 mr-2" alt="Google Review" />
-                                            <img src={iconFacebook} className="w-4 h-4 opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0 mr-2" alt="Facebook Review" />
-                                            <img src={iconInstagram} className="w-4 h-4 opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0 mr-2" alt="Instagram Review" />
-                                            <img src={icon11} className="w-4 h-4 opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0 mr-2" alt="TripAdvisor" />
-                                            <img src={icon12} className="w-4 h-4 opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0 mr-2" alt="Booking.com" />
-                                            <img src={icon13} className="w-4 h-4 opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0 mr-2" alt="Trustpilot" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </motion.div>
-                    ))}
+                        </div>
+                    </div>
+                    <p className="text-gray-600 text-sm italic leading-relaxed" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                        "{review.review}"
+                    </p>
                 </div>
-            </div>
-
-            {/* Next Button */}
-            <div className="flex justify-center mt-6">
-                <button
-                    onClick={() => setCurrentReviewIndex((prev) => (prev + 1) % reviewsData.length)}
-                    className="bg-lime-500 hover:bg-lime-600 text-white px-6 py-3 rounded-full font-semibold transition-colors duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl"
-                >
-                    <span>Next Review</span>
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                </button>
-            </div>
-        </div>
+            ))}
+        </motion.div>
+    </div>
+</div>
         
         {/* Auto-scrolling Customer Images */}
         <motion.div
@@ -1273,7 +1245,7 @@ function Home() {
             viewport={{ once: true }}
             className="mt-12"
         >
-            <div className="relative overflow-hidden bg-gradient-to-r from-lime-50 to-green-50 rounded-2xl p-6">
+            <div className="relative overflow-hidden bg-linear-to-r from-lime-50 to-green-50 rounded-2xl p-6">
                 <div className="flex animate-scroll-testimonials">
                     {/* Testimonial highlights */}
                     <div className="flex-shrink-0 mx-4 text-center">
