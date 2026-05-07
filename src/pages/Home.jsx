@@ -78,7 +78,8 @@ import image47 from '../assets/image48.jpeg'
 import image48 from '../assets/image49.jpeg'
 import image49 from '../assets/image50.jpeg'
 import image50 from '../assets/image51.jpeg'
-import image51 from '../assets/image51.jpeg'
+import image51 from '../assets/image52.jpeg'
+import image52 from '../assets/image52.jpeg'
 
 
 // New SVG Icons for the feature grid
@@ -256,7 +257,7 @@ function Home() {
         image17, image18, image19, image20,
         image21, image22, image7, image8,
         image9, image10, image6, image11,
-        image12, image13 ,image51
+        image12, image13 ,image51,image52
     ];
     const [lightboxOpen, setLightboxOpen] = useState(false);
     const [lightboxIndex, setLightboxIndex] = useState(0);
@@ -321,7 +322,7 @@ function Home() {
                 <div className="relative z-20 flex flex-col min-h-[calc(100vh)]">
                     <nav className="bg-black h-16 md:h-20 flex justify-between items-center px-6 md:px-12 overflow-visible">
                         <div className="flex items-center mr-30">
-                            <img src={logo} className="h-16 md:h-48 w-auto " />
+                            <img src={logo} className="h-700 md:h-70 w-auto " />
                         </div>
                         {/* Desktop Navigation bar */}
                         <div className="hidden md:flex gap-8 items-center justify-end">
@@ -397,7 +398,7 @@ function Home() {
                             <div className="flex flex-col flex-1 text-left items-start">
                                 <div style={{ fontFamily: 'Poppins, sans-serif', fontWeight: '700' }} className="text-lime-400 text-[20px] sm:text-[26px] md:text-[40px] pb-3 text-left uppercase">Our Concept</div>
                                 <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '400' }} className="text-black text-[14px] sm:text-[16px] md:text-[18px] pb-8 text-left max-w-2xl">
-                                    Built with eco-friendly materials and guided by years of expert tracking, we offer an authentic sanctuary for nature lovers. Witness the giants of the wild in unparalleled comfort.
+                                    Built with eco-friendly materials and guided by years of expert tracking, we offer an authentic sanctuary for nature lovers. Witness the giants of the wild in breath-taking detail while enjoying unparalleled comfort, ensuring every moment spent in our serene environment leaves a lasting, soul-stirring impression of pure wilderness
                                 </div>
                                 
                                 {/* Features List */}
@@ -445,14 +446,14 @@ function Home() {
                                 viewport={{ once: true, amount: 0.5 }}
                                 className="flex flex-row gap-4 shrink-0 items-center justify-center w-full lg:w-auto mt-12 lg:mt-0"
                             >
-                                <div className="flex flex-col gap-4 h-64 sm:h-80 md:h-96 lg:h-[450px]">
-                                    <img src={image6} className="w-32 sm:w-40 md:w-44 lg:w-48 flex-1 object-cover rounded-xl shadow-xl hover:scale-105 transition duration-300" />
-                                    <img src={image30} className="w-32 sm:w-40 md:w-44 lg:w-48 flex-1 object-cover rounded-xl shadow-xl hover:scale-105 transition duration-300" />
+                                <div className="flex flex-col gap-4 h-64 sm:h-80 md:h-96 lg:h-[500px]">
+                                    <img src={image6} className="w-60 sm:w-60 md:w-60 lg:w-60 flex-1 object-cover rounded-xl shadow-xl hover:scale-105 transition duration-300" />
+                                    <img src={image30} className="w-60 sm:w-60 md:w-60 lg:w-60 flex-1 object-cover rounded-xl shadow-xl hover:scale-105 transition duration-300" />
                                 </div>
-                                <div className="flex flex-col gap-4 h-64 sm:h-80 md:h-96 lg:h-[450px]">
-                                    <img src={image5} className="w-32 sm:w-40 md:w-44 lg:w-48 flex-1 object-cover rounded-xl shadow-xl hover:scale-105 transition duration-300" />
-                                    <img src={image4} className="w-32 sm:w-40 md:w-44 lg:w-48 flex-1 object-cover rounded-xl shadow-xl hover:scale-105 transition duration-300" />
-                            </div>
+                                <div className="flex flex-col gap-4 h-64 sm:h-80 md:h-96 lg:h-[500px]">
+                                    <img src={image5} className="w-60 sm:w-60 md:w-60 lg:w-60 flex-1 object-cover rounded-xl shadow-xl hover:scale-105 transition duration-300" />
+                                    <img src={image4} className="w-60 sm:w-60 md:w-60 lg:w-60 flex-1 object-cover rounded-xl shadow-xl hover:scale-105 transition duration-300" />
+                                </div>
                             </motion.div>
                         </div>
                     </motion.div>
@@ -918,12 +919,12 @@ function Home() {
 
                                     <div className="absolute bottom-0 left-0 right-0 p-4 text-center">
                                         <h3 className="text-white text-sm sm:text-[15px] font-semibold"
-                                            style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                                            style={{ fontFamily: 'poppins' }}>
                                             THE EXPLORER'S ESCAPE
                                         </h3>
 
                                         <p className="text-white text-xs sm:text-[10px] mt-1 leading-tight"
-                                            style={{ fontFamily: 'Poppins, sans-serif' }}>
+                                            style={{ fontFamily: 'poppins' }}>
                                             STANDARD ECO-CABIN (AC/NON-AC OPTIONS). <br />
                                             INCLUDES BED & BREAKFAST
                                         </p>
@@ -959,12 +960,12 @@ function Home() {
 
                                     <div className="absolute bottom-0 left-0 right-0 p-4 text-center">
                                         <h3 className="text-white text-sm sm:text-[15px] font-semibold"
-                                            style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                                            style={{ fontFamily: 'poppins' }}>
                                             THE EXPLORER'S ESCAPE
                                         </h3>
 
                                         <p className="text-white text-xs sm:text-[10px] mt-1 leading-tight"
-                                            style={{ fontFamily: 'Poppins, sans-serif' }}>
+                                            style={{ fontFamily: 'poppins' }}>
                                             STANDARD ECO-CABIN (AC/NON-AC OPTIONS). <br />
                                             INCLUDES BED & BREAKFAST
                                         </p>
@@ -974,7 +975,7 @@ function Home() {
 
                             <div className="bg-[#3A3A3A] px-4 pt-4 pb-2 text-center">
                                 <button onClick={() => handleWhatsApp("Hello, I would like to book a stay.")} 
-                                    style={{ fontFamily: 'Montserrat, sans-serif', backgroundColor: '#2eb872' }}
+                                    style={{ fontFamily: 'poppins', backgroundColor: '#2eb872' }}
                                     className="w-full text-black text-[12px] font-semibold rounded-md py-2 hover:opacity-90 transition">
                                     BOOK NOW
                                 </button>
@@ -1030,34 +1031,53 @@ function Home() {
                     </div>
                 </motion.div>
                 {/*Gallerry*/}
-                <div className="pt-4 md:pt-4 max-w-[1450px] mx-auto">
-                    <div id="gallery" className="flex flex-col items-center justify-center mb-6 px-4 text-center">
-                        <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="text-black text-2xl sm:text-3xl md:text-[48px] font-semibold">
-                            WILDERNESS &amp; WELLBEING
-                        </div>
-                        <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '400' }} className="text-black text-base sm:text-xl md:text-[28px] font-semibold">
-                            Authentic safaris, refined relaxation. Captured by our guests.
-                        </div>
+              {/* Gallery Section */}
+<div id="gallery" className="bg-white py-20 px-4 md:px-12">
+    <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+            <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '700' }} className="text-3xl md:text-5xl text-black mb-4">
+                OUR <span className="text-lime-500">GALLERY</span>
+            </h2>
+            <div className="w-24 h-1 bg-lime-500 mx-auto rounded-full"></div>
+            <p className="text-gray-600 mt-6 max-w-2xl mx-auto">
+                Explore the breathtaking moments captured at Green Wild Safari Resort and during our Udawalawe adventures.
+            </p>
+        </div>
+
+        {/* Updated Grid for Same Size Images */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {galleryImages.slice(0, 12).map((img, index) => (
+                <motion.div
+                    key={index}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="relative group cursor-pointer aspect-square overflow-hidden rounded-xl bg-gray-100"
+                    onClick={() => openLightbox(index)}
+                >
+                    <img 
+                        src={img} 
+                        alt={`Gallery ${index}`} 
+                        className="w-full h-full object-cover transition duration-500 group-hover:scale-110" 
+                    />
+                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span className="text-white text-3xl">+</span>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0 px-4 md:px-16">
-                        {galleryImages.slice(0, 12).map((img, index) => (
-                            <div
-                                key={index}
-                                className="relative overflow-hidden group cursor-default"
-                                onClick={() => openLightbox(index)}
-                            >
-                                <img src={img} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-                                {/*12th image */}
-                                {index === 11 && (
-                                    <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center transition-opacity">
-                                        <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '700' }} className="text-white text-4xl md:text-5xl font-bold">more</span>
-                                        <span style={{ fontFamily: 'Poppins, sans-serif', fontWeight: '400' }} className="text-white/80 text-sm md:text-base mt-1">View Gallery</span>
-                                    </div>
-                                )}
-                            </div>
-                        ))}
-                    </div>
-                </div>
+                </motion.div>
+            ))}
+        </div>
+
+        <div className="text-center mt-12">
+            <button 
+                onClick={() => openLightbox(0)}
+                className="bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-lime-500 transition duration-300"
+            >
+                View More Photos
+            </button>
+        </div>
+    </div>
+</div>
 
                 {/* Lightbox Overlay */}
                 {lightboxOpen && (
@@ -1127,11 +1147,11 @@ function Home() {
             viewport={{ once: true }}
             className="flex flex-col items-center mb-16 text-center"
         >
-            <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '700' }} className="text-black text-3xl md:text-5xl lg:text-[56px] mb-4">
+            <h2 style={{ fontFamily: 'poppins', fontWeight: '700' }} className="text-black text-3xl md:text-5xl lg:text-[56px] mb-4">
                 VOICES FROM THE WILD
             </h2>
             <div style={{ backgroundColor: '#2eb872' }} className="w-24 h-1 mb-6"></div>
-            <p style={{ fontFamily: 'Poppins, sans-serif' }} className="text-gray-600 max-w-2xl text-lg">
+            <p style={{ fontFamily: 'poppins' }} className="text-gray-600 max-w-2xl text-lg">
                 Discover why travelers from around the globe choose Green Wild for their Udawalawe adventure.
             </p>
         </motion.div>
@@ -1141,7 +1161,7 @@ function Home() {
       {/* Review Carousel Section */}
 <div id="review" className="py-16 bg-white overflow-hidden">
     <div className="max-w-[1400px] mx-auto px-4 mb-12 text-center">
-        <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '700' }} className="text-3xl md:text-5xl text-black uppercase">
+        <h2 style={{ fontFamily: 'poppins', fontWeight: '700' }} className="text-3xl md:text-5xl text-black uppercase">
             Guest <span className="text-lime-500">Experiences</span>
         </h2>
         <p className="text-gray-500 mt-4 font-medium">Voices of those who journeyed with us through the wild</p>
@@ -1200,7 +1220,7 @@ function Home() {
             viewport={{ once: true }}
             className="mt-16"
         >
-            <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="text-center text-black text-xl md:text-2xl mb-8">
+            <h3 style={{ fontFamily: 'poppins', fontWeight: '600' }} className="text-center text-black text-xl md:text-2xl mb-8">
                 Our Happy Guests
             </h3>
             <div className="relative overflow-hidden">
@@ -1340,8 +1360,8 @@ function Home() {
                         id="contact"
                         className="flex flex-col items-center px-4 md:px-20 text-center"
                     >
-                        <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="text-black text-2xl sm:text-3xl md:text-[45px] font-semibold">CONTACT OUR WILD GUIDES</div>
-                        <div style={{ fontFamily: 'Inter, sans-serif', fontWeight: '400' }} className="text-black/50 text-base sm:text-xl md:text-[28px] text-center">Planning your adventure in Udawalawe should be as smooth as the experience itself Our expert guides are ready to help you</div>
+                        <div style={{ fontFamily: 'Poppins', fontWeight: '600' }} className="text-black text-2xl sm:text-3xl md:text-[45px] font-semibold">CONTACT OUR WILD GUIDES</div>
+                        <div style={{ fontFamily: 'Poppins', fontWeight: '400' }} className="text-black/50 text-base sm:text-xl md:text-[28px] text-center">Planning your adventure in Udawalawe should be as smooth as the experience itself Our expert guides are ready to help you</div>
                     </motion.div>
                     <div className="flex flex-col lg:flex-row px-4 md:px-15 pt-10 md:pt-15 gap-10">
                         <motion.div
@@ -1351,10 +1371,10 @@ function Home() {
                             viewport={{ once: true, amount: 0.1 }}
                             className="flex flex-col flex-1"
                         >
-                            <div style={{ fontFamily: 'Inter, sans-serif', fontWeight: '600' }} className="font-semibold text-lime-400 text-xl md:text-[28px]">
+                            <div style={{ fontFamily: 'Poppins', fontWeight: '600' }} className="font-semibold text-lime-400 text-xl md:text-[28px]">
                                 SEND US A NOTE
                             </div>
-                            <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '400' }} className="pt-4 text-[13px] text-black/70 pb-6">
+                            <div style={{ fontFamily: 'Poppins', fontWeight: '400' }} className="pt-4 text-[13px] text-black/70 pb-6">
                                 Use the from below for any inquiries oe bespoke safari planning we will get back to you within 24 hours
                             </div>
                             <div className="flex flex-col sm:flex-row gap-6">
@@ -1364,8 +1384,8 @@ function Home() {
                                             <img src={iconPhone} className="w-5 h-5" />
                                         </div>
                                         <div className="flex flex-col">
-                                            <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="text-[12px] text-black/70">Call/WhatsApp</div>
-                                            <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '500' }} className="text-xs sm:text-[11px] text-black">0769392153</div>
+                                            <div style={{ fontFamily: 'Poppins', fontWeight: '600' }} className="text-[12px] text-black/70">Call/WhatsApp</div>
+                                            <div style={{ fontFamily: 'Poppins', fontWeight: '500' }} className="text-xs sm:text-[11px] text-black">0769392153</div>
                                         </div>
                                     </div>
                                     {/* Email */}
@@ -1374,8 +1394,8 @@ function Home() {
                                             <img src={iconMail} className="w-5 h-5" />
                                         </div>
                                         <div className="flex flex-col">
-                                            <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="text-[12px] text-black/70">Email</div>
-                                            <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '500' }} className="text-xs sm:text-[11px] text-black">greenwildsafariresort@gmail.com</div>
+                                            <div style={{ fontFamily: 'Poppins', fontWeight: '600' }} className="text-[12px] text-black/70">Email</div>
+                                            <div style={{ fontFamily: 'Poppins', fontWeight: '500' }} className="text-xs sm:text-[11px] text-black">greenwildsafariresort@gmail.com</div>
                                         </div>
                                     </div>
                                     {/* Location */}
@@ -1384,13 +1404,13 @@ function Home() {
                                             <img src={iconLocation} className="w-5 h-5" />
                                         </div>
                                         <div className="flex flex-col">
-                                            <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="text-[12px] text-black/70">Our Location</div>
-                                            <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '500' }} className="text-xs sm:text-[11px] text-black">Green Wild Safari Resort,<br />Thanamalvila Rd, Udawalawa 70190</div>
+                                            <div style={{ fontFamily: 'Poppins', fontWeight: '600' }} className="text-[12px] text-black/70">Our Location</div>
+                                            <div style={{ fontFamily: 'Poppins', fontWeight: '500' }} className="text-xs sm:text-[11px] text-black">Green Wild Safari Resort,<br />Thanamalvila Rd, Udawalawa 70190</div>
                                         </div>
                                     </div>
                                     {/* Support*/}
                                     <div className="mt-2">
-                                        <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="text-[12px] text-black/70 mb-2">SUPPORT &amp; RESOURCES</div>
+                                        <div style={{ fontFamily: 'Poppins', fontWeight: '600' }} className="text-[12px] text-black/70 mb-2">SUPPORT &amp; RESOURCES</div>
                                         <div className="flex gap-3 items-center">
                                             <img src={iconGoogle} className="w-7 h-7 cursor-pointer hover:opacity-75 transition" />
                                             <img src={iconFacebook} className="w-7 h-7 cursor-pointer hover:opacity-75 transition" />
@@ -1418,7 +1438,7 @@ function Home() {
                                 <div className="flex flex-col gap-6">
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                         <div className="flex flex-col">
-                                            <label style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '500' }} className="text-white text-[12px] mb-2">
+                                            <label style={{ fontFamily: 'poppins', fontWeight: '500' }} className="text-white text-[12px] mb-2">
                                                 FULL NAME
                                             </label>
                                             <input
@@ -1427,11 +1447,11 @@ function Home() {
                                                 value={formData.name}
                                                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                                                 className="bg-transparent border-2 border-lime-400 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-lime-300"
-                                                style={{ fontFamily: 'Montserrat, sans-serif' }}
+                                                style={{ fontFamily: 'poppins' }}
                                             />
                                         </div>
                                         <div className="flex flex-col">
-                                            <label style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '500' }} className="text-white text-[12px] mb-2">
+                                            <label style={{ fontFamily: 'poppins', fontWeight: '500' }} className="text-white text-[12px] mb-2">
                                                 EMAIL ADDRESS
                                             </label>
                                             <input
@@ -1440,13 +1460,13 @@ function Home() {
                                                 value={formData.email}
                                                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                                 className="bg-transparent border-2 border-lime-400 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-lime-300"
-                                                style={{ fontFamily: 'Montserrat, sans-serif' }}
+                                                style={{ fontFamily: 'poppins' }}
                                             />
                                         </div>
                                     </div>
 
                                     <div className="flex flex-col">
-                                        <label style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '500' }} className="text-white text-[12px] mb-2">
+                                        <label style={{ fontFamily: 'poppins', fontWeight: '500' }} className="text-white text-[12px] mb-2">
                                             PHONE NUMBER
                                         </label>
                                         <input
@@ -1455,12 +1475,12 @@ function Home() {
                                             value={formData.phone}
                                             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                                             className="bg-transparent border-2 border-lime-400 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-lime-300"
-                                            style={{ fontFamily: 'Montserrat, sans-serif' }}
+                                            style={{ fontFamily: 'Poppins' }}
                                         />
                                     </div>
 
                                     <div className="flex flex-col">
-                                        <label style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '500' }} className="text-white text-[12px] mb-2">
+                                        <label style={{ fontFamily: 'Poppins', fontWeight: '500' }} className="text-white text-[12px] mb-2">
                                             YOUR MESSAGE
                                         </label>
                                         <textarea
@@ -1469,7 +1489,7 @@ function Home() {
                                             value={formData.message}
                                             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                                             className="bg-transparent border-2 border-lime-400 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-lime-300 resize-none"
-                                            style={{ fontFamily: 'Montserrat, sans-serif' }}
+                                            style={{ fontFamily: 'Poppins' }}
                                         ></textarea>
                                     </div>
                                 </div>
@@ -1483,7 +1503,7 @@ function Home() {
                             >
                                 <button
                                     onClick={handleInquirySubmit}
-                                    style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '700', backgroundColor: '#2eb872' }}
+                                    style={{ fontFamily: 'poppins', fontWeight: '700', backgroundColor: '#2eb872' }}
                                     className="text-black font-bold text-[16px] px-12 py-3 rounded-xl hover:opacity-90 transition duration-300"
                                 >
                                     SEND INQUIRE
@@ -1500,8 +1520,8 @@ function Home() {
                     viewport={{ once: true, amount: 0.1 }}
                     className="flex flex-col items-center py-16 md:py-24 px-4 text-center"
                 >
-                    <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '700' }} className="text-black text-2xl sm:text-3xl md:text-[45px] font-semibold">OTHER PLACES IN UDAWALAWE</div>
-                    <div style={{ fontFamily: 'Inter, sans-serif', fontWeight: '400' }} className="text-black/70 text-base sm:text-xl md:text-[28px] text-center">Step outside the safari and uncover the rich history and scenic beauty of the Udawalawe region.</div>
+                    <div style={{ fontFamily: 'poppins', fontWeight: '700' }} className="text-black text-2xl sm:text-3xl md:text-[45px] font-semibold">OTHER PLACES IN UDAWALAWE</div>
+                    <div style={{ fontFamily: 'poppins', fontWeight: '400' }} className="text-black/70 text-base sm:text-xl md:text-[28px] text-center">Step outside the safari and uncover the rich history and scenic beauty of the Udawalawe region.</div>
                 </motion.div>
                 <motion.div
                     initial={{ x: 100, opacity: 0 }}
