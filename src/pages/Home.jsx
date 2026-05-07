@@ -78,6 +78,8 @@ import image47 from '../assets/image48.jpeg'
 import image48 from '../assets/image49.jpeg'
 import image49 from '../assets/image50.jpeg'
 import image50 from '../assets/image51.jpeg'
+import image51 from '../assets/image51.jpeg'
+
 
 // New SVG Icons for the feature grid
 const SafariJeepIcon = () => (
@@ -254,7 +256,7 @@ function Home() {
         image17, image18, image19, image20,
         image21, image22, image7, image8,
         image9, image10, image6, image11,
-        image12, image13
+        image12, image13 ,image51
     ];
     const [lightboxOpen, setLightboxOpen] = useState(false);
     const [lightboxIndex, setLightboxIndex] = useState(0);
@@ -465,9 +467,9 @@ function Home() {
                     viewport={{ once: true, amount: 0.1 }}
                     className="flex flex-col items-center py-8 md:py-16 lg:py-24 text-center px-4 sm:px-8 md:px-10 max-w-[1400px] mx-auto w-full"
                 >
-                    <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="font-semibold text-white text-2xl sm:text-3xl md:text-4xl lg:text-[56px]">WHY CHOOSE</div>
-                    <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="-mt-2 font-semibold text-white text-2xl sm:text-3xl md:text-4xl lg:text-[56px]">OUR SAFARI TOURS</div>
-                    <div style={{ fontFamily: 'Poppins, sans-serif', fontWeight: '400' }} className="text-lime-400 text-[12px] sm:text-[14px] md:text-[18px] lg:text-[22px] mt-2">Authentic, sustainable, And Unforgettable Encounters In Udawalawe</div>
+                    <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="font-semibold text-white text-2xl sm:text-3xl md:text-4xl lg:text-[56px]">DISCOVER </div> <div> <div style={{ fontFamily: 'Montserrat,sans-serif', fontWeight: '700' }} className="text-lime-400 text-3xl sm:text-5xl md:text-7xl lg:text-[56px] leading-none">OUR RANGE OF SERVICES</div>
+                     WILD</div>
+                    
                 </motion.div>
 
                 <motion.div
@@ -479,14 +481,14 @@ function Home() {
                 >
                     <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_0.9fr] gap-8 items-center">
                         <div className="grid grid-cols-2 gap-4">
-                            {[image8, image9, image10, image11].map((img, idx) => (
+                            {[image8, image9, image51, image11].map((img, idx) => (
                                 <div key={idx} className="overflow-hidden rounded-3xl shadow-2xl h-56 sm:h-64 lg:h-72 bg-white">
                                     <img src={img} alt={`Our story ${idx + 1}`} className="w-full h-full object-cover transition duration-500 hover:scale-105" />
                                 </div>
                             ))}
                         </div>
                         <div className="rounded-[32px] border border-white/10 bg-slate-950/80 p-8 shadow-2xl backdrop-blur-xl">
-                            <span className="text-lime-400 uppercase tracking-[0.3em] text-xs font-semibold">Our Story</span>
+                            <span className="text-lime-400 uppercase tracking-[0.3em] text- font-semibold">Our Story</span>
                             <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '700' }} className="text-white text-3xl sm:text-4xl mt-4 leading-tight">
                                 Passionate about wildlife, culture, and unforgettable safari journeys.
                             </h3>
@@ -562,7 +564,7 @@ function Home() {
         </p>
     </motion.div>
 
-    <div className="flex flex-col lg:flex-row px-6 md:px-16 gap-12 items-center max-w-[1400px] mx-auto">
+    <div className="flex flex-col lg:flex-row px-6 md:px-16 gap-12 items-center max-w-[1600px] mx-auto">
         {/* Left Side: Feature Grid */}
         <motion.div
             initial={{ x: -100, opacity: 0 }}
@@ -746,7 +748,7 @@ function Home() {
             className="flex flex-col lg:w-1/2"
         >
             <p style={{ fontFamily: 'poppins'}} className="text-gray-800 text-base md:text-lg leading-relaxed mb-8 text-justify">
-              Welcome to one of the world's premier wildlife destinations. Spanning over 30,000 hectares of sun-drenched grasslands and ancient forests, Udawalawe National Park offers an immersive safari experience that rivals the Great Savannahs of Africa. Nestled against the backdrop of the central highlands, this sanctuary is a masterpiece of biodiversity, where nature remains untamed and every turn of the trail reveals a new wonder.
+              Welcome to one of the world's premier wildlife destinations. Spanning over 30,000 hectares of sun-drenched grasslands and ancient forests, Udawalawe National Park offers an immersive safari experience that rivals the Great Savannahs of Africa. Nestled against the backdrop of the central highlands, this sanctuary is a masterpiece of biodiversity, where nature remains untamed and every turn of the trail reveals a new wonder.Our expert guides lead you through these vast landscapes, ensuring intimate encounters with majestic elephants while you enjoy the unparalleled serenity of our eco-friendly resort.
             </p>
 
             <div className="space-y-8">

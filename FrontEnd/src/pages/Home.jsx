@@ -441,11 +441,11 @@ function Home() {
                                 viewport={{ once: true, amount: 0.5 }}
                                 className="flex flex-row gap-4 shrink-0 items-center justify-center w-full lg:w-auto mt-12 lg:mt-0"
                             >
-                                <div className="flex flex-col gap-4 h-64 sm:h-80 md:h-96 lg:h-[450px]">
+                                <div className="flex flex-col gap-4 h-64 sm:h-80 md:h-96 lg:h-112.5">
                                     <img src={image6} className="w-32 sm:w-40 md:w-44 lg:w-48 flex-1 object-cover rounded-xl shadow-xl hover:scale-105 transition duration-300" />
                                     <img src={image30} className="w-32 sm:w-40 md:w-44 lg:w-48 flex-1 object-cover rounded-xl shadow-xl hover:scale-105 transition duration-300" />
                                 </div>
-                                <div className="flex flex-col gap-4 h-64 sm:h-80 md:h-96 lg:h-[450px]">
+                                <div className="flex flex-col gap-4 h-64 sm:h-80 md:h-96 lg:h-112.5">
                                     <img src={image5} className="w-32 sm:w-40 md:w-44 lg:w-48 flex-1 object-cover rounded-xl shadow-xl hover:scale-105 transition duration-300" />
                                     <img src={image4} className="w-32 sm:w-40 md:w-44 lg:w-48 flex-1 object-cover rounded-xl shadow-xl hover:scale-105 transition duration-300" />
                             </div>
@@ -463,7 +463,7 @@ function Home() {
                     viewport={{ once: true, amount: 0.1 }}
                     className="flex flex-col items-center py-8 md:py-16 lg:py-24 text-center px-4 sm:px-8 md:px-10 max-w-350 mx-auto w-full"
                 >
-                    <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="font-semibold text-white text-2xl sm:text-3xl md:text-4xl lg:text-[56px]">Discover Our Range of Services</div>
+                    <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="font-semibold text-white text-2xl sm:text-3xl md:text-4xl lg:text-[56px]">Discover  Range of Services</div>
     
                     <div style={{ fontFamily: 'Poppins, sans-serif', fontWeight: '400' }} className="text-lime-400 text-[12px] sm:text-[14px] md:text-[18px] lg:text-[22px] mt-2">Authentic, sustainable, And Unforgettable Encounters In Udawalawe</div>
                 </motion.div>
